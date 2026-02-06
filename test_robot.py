@@ -212,6 +212,8 @@ def test_performance():
         
         start_time = time.time()
         actions = navigator.navigate_to_goal()
+        #Don't use actions
+        print(navigator.path)
         execution_time = time.time() - start_time
         
         print(f"  Execution time: {execution_time*1000:.2f} ms")
